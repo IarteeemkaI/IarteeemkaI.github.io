@@ -4,12 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>  
-        let rows = 4;
-        let columns = 7;
-        let hantNumb = 9;
-        let isHunt = (hantNumb % rows == 0) || (hantNumb % columns == 0);
-        console.log(isHunt);
+    <script>
+        let h = 4;
+        let v = 7;
+        let a = 9;
+        let b = 16;
+        let c = 0;
+        let d = 0;
+        
+        for(let i = 0; i < v; i++){
+            if(h*i == a){
+                c++;
+            };
+        };
+    
+        for(let i = 0; i < h; i++){
+            if(i*v == a){
+                c++;
+            };
+        };
+    
+        for(let i = 0; i < v; i++){
+            if(h*i == b){
+                d++;
+            };
+        };
+    
+        for(let i = 0; i < h; i++){
+            if(i*v == b){
+                d++;
+            };
+        };
+    
+        if(c > 0){
+            document.write("Шоколад можно разделить на " + a + " долек");
+        }else{
+            document.write("Шоколад нельзя разделить на " + a + " долек");
+        };
+    
+        document.write("<br>");
+    
+        if(d > 0){
+            document.write("Шоколад можно разделить на " + b + " долек");
+        }else{
+            document.write("Шоколад нельзя разделить на " + b + " долек");
+        };
     </script>
 </head>
 <body>
