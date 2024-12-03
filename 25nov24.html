@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        let ind1 = {
+            name: 'Victor',
+            tel: '+7(977)777-00-77',
+            balance: '7.499.267',
+            rate: '4.8',
+            period: '5',
+            result: function(){
+                for(let i = 0; i<this.period; i++){
+                    document.write(i+':'+this.balance+'<br>');
+                }
+            }
+        },
+            ind2 = {
+                name: 'Elon',
+                tel: '+7(966)666-00-66',
+                balance: '526.479',
+                rate: '5.0',
+                period: '5'
+            },
+            ind3 = {
+                name: 'IDK',
+                tel: '+7(990)435-39-57',
+                balance: '500   ',
+                rate: '4.7',
+                period: '5'
+            }
+
+            document.write(ind1.name+' '+ind1.tel+' '+ind1.balance+' '+ind1.rate+' '+ind1.period+ '<br>')
+            ind1.result();
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
